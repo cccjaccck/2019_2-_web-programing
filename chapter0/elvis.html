@@ -20,6 +20,9 @@
             font-size: 20px;
             color: blue;
         }
+        div {
+            height: 150px;
+        }
         /* 픽셀 단위(px)는 모니터의 해상도에 따라 달라짐. 포인트(pt)는 정해진 고정된 길이. 잘 안씀. */
     </style>
     <script>
@@ -32,6 +35,14 @@
             let e = document.getElementById("elvis_img");
             e.src = "";    
         }
+        function showme() {
+            let e = document.getElementById("elvis_img");
+            e.src = "../images/슈렉.jpg";
+        }
+        function hideme() {
+            let e = document.getElementById("elvis_img");
+            e.src = "";
+        }
     </script>
 </head>
 <body>
@@ -39,12 +50,11 @@
     <hr>
     <!-- div는 division의 약자 -->
     <div>
-        <img id="elvis_img" src="" width="100px">
+        <img id="elvis_img" alt="앨비스 이미지" src="" width="100px">
     </div> 
-    He was an American singer and actor. In November
-    1956, he made his film debut in <span>Love Me 
-    Tender</span>. He is often referred to as 
-    "<span>the King of Rock and Roll</span>".
+    He was an American singer and actor. In November 1956, he made his film debut in 
+    <span onmouseover="showme();" onmouseout="hideme();">Love Me Tender</span>.
+     He is often referred to as "<span>the King of Rock and Roll</span>".
     
 </body>
 </html>
