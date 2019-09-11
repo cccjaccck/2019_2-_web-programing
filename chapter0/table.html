@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>테이블 만들기</title>
+        <meta charset="utf-8">
+        <style>
+            td {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>테이블 만들기</h3>
+        <table border="1">
+            <caption>1 학기 성적</caption>
+            <thead>
+                <tr> <th>이름</th> <th>HTML</th> <th>CSS</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>홍길동</td><td>80</td><td>75</td></tr>
+                <tr><td>심순애</td><td>90</td><td>99</td></tr>
+                <tr><td>김중배</td><td>40</td><td>65</td></tr>
+                <tr>
+                    <td><img src="../images/elvis.jpg" width="100px" alt=""></td>
+                    <td><img src="../images/monster.jpg" width="100px" alt=""></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr><th>합계</th><td>220</td><td>239</td></tr>
+            </tfoot>
+            <!-- td 대신 th로 바꿔도 됨. 바꾸면 헤드라인의 스타일 적용됨.-->
+        </table>
+    </body>
+</html>
